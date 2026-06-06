@@ -514,7 +514,7 @@ button {
   transition: transform 0.45s cubic-bezier(0.2, 0.75, 0.2, 1);
 }
 
-.project a:hover .project-art {
+.project:hover .project-art {
   transform: scale(0.985);
 }
 
@@ -640,14 +640,14 @@ button {
   font-size: 14px;
 }
 
-.project-meta b {
-  font-size: 24px;
-  font-weight: 400;
-  transition: transform 0.25s ease;
-}
-
-.project a:hover .project-meta b {
-  transform: translate(4px, -4px);
+.project-status {
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .art-festival,

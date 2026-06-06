@@ -2,7 +2,13 @@ const root = document.documentElement;
 const themeToggle = document.querySelector(".theme-toggle");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
+const themeColor = document.querySelector('meta[name="theme-color"]');
 const savedTheme = localStorage.getItem("theme");
+
+const syncThemeColor = () => {
+  const isDark = root.dataset.theme === "dark";
+  themeColor.setAttribute("content", isDark ? "#171713" : "#f2efe7");
+};
 
 if (savedTheme) {
   root.dataset.theme = savedTheme;
@@ -10,10 +16,13 @@ if (savedTheme) {
   root.dataset.theme = "dark";
 }
 
+syncThemeColor();
+
 themeToggle.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = nextTheme;
   localStorage.setItem("theme", nextTheme);
+  syncThemeColor();
 });
 
 menuToggle.addEventListener("click", () => {
