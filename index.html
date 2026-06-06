@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="未完档案是林墨的个人主页，记录设计、开发与独立创作。"
+    />
+    <title>未完档案 · Unfinished Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="返回首页">
+        <span>LM</span>
+        <i></i>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#work">作品</a>
+        <a href="#journey">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="切换颜色主题">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.4 15.3A8.5 8.5 0 0 1 8.7 3.6 8.5 8.5 0 1 0 20.4 15.3Z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> 独立设计师 & 前端开发者</p>
+          <h1>把复杂的想法，<br />做成<span>简单好用</span>的产品。</h1>
+          <p class="hero-intro">
+            你好，我是林墨。目前在上海工作，关注数字产品、品牌体验与创意编程。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              查看作品
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a class="text-link" href="#contact">聊聊你的想法 <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="抽象个人肖像插画">
+          <div class="portrait-card">
+            <div class="portrait-grid"></div>
+            <div class="portrait-mark">M</div>
+            <div class="portrait-orbit orbit-one"></div>
+            <div class="portrait-orbit orbit-two"></div>
+            <div class="portrait-dot"></div>
+            <p>DESIGN<br />WITH<br />INTENT.</p>
+            <span class="portrait-index">01 / 04</span>
+          </div>
+          <div class="availability">
+            <i></i>
+            <span>开放 2026 年合作</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="专业能力">
+        <div class="marquee-track">
+          <span>产品设计</span><i>✦</i><span>前端开发</span><i>✦</i><span>品牌视觉</span><i>✦</i>
+          <span>创意编码</span><i>✦</i><span>产品设计</span><i>✦</i><span>前端开发</span><i>✦</i>
+          <span>品牌视觉</span><i>✦</i><span>创意编码</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-label reveal">
+          <span>01</span>
+          <p>关于我</p>
+        </div>
+        <div class="about-content">
+          <h2 class="reveal">我相信好的设计不只被看见，<br />更应该被<span>自然地使用</span>。</h2>
+          <div class="about-grid">
+            <p class="reveal">
+              过去 6 年，我与创业团队和成熟品牌一起工作，从模糊的问题出发，完成策略、界面到可交付产品的全过程。
+            </p>
+            <p class="reveal">
+              工作之外，我喜欢拍摄城市里的旧招牌，研究字体，也持续做一些没有明确用途的小网站。
+            </p>
+          </div>
+          <div class="stats reveal">
+            <div><strong>6+</strong><span>年设计经验</span></div>
+            <div><strong>32</strong><span>个落地项目</span></div>
+            <div><strong>08</strong><span>项设计奖项</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-heading reveal">
+          <div class="section-label">
+            <span>02</span>
+            <p>精选作品</p>
+          </div>
+          <p>从策略到上线，记录几个我喜欢的项目。</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project project-large reveal">
+            <a href="#" aria-label="查看白昼健康项目">
+              <div class="project-art art-health">
+                <div class="phone">
+                  <div class="phone-top"></div>
+                  <p>今日状态</p>
+                  <strong>82</strong>
+                  <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <span>状态不错，继续保持</span>
+                </div>
+                <span class="floating-pill pill-one">睡眠 7h 42m</span>
+                <span class="floating-pill pill-two">专注 +12%</span>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span>01 / 产品设计</span>
+                  <h3>白昼健康</h3>
+                </div>
+                <p>为年轻人设计的轻量健康管理体验</p>
+                <b>↗</b>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <a href="#" aria-label="查看无界艺术节项目">
+              <div class="project-art art-festival">
+                <span class="festival-year">2025</span>
+                <strong>无<br />界</strong>
+                <div class="festival-circle"></div>
+                <p>ART<br />WITHOUT<br />BORDERS</p>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span>02 / 品牌设计</span>
+                  <h3>无界艺术节</h3>
+                </div>
+                <b>↗</b>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <a href="#" aria-label="查看坐标城市项目">
+              <div class="project-art art-city">
+                <div class="city-window">
+                  <div class="sunset"></div>
+                  <div class="building b-one"></div>
+                  <div class="building b-two"></div>
+                  <div class="building b-three"></div>
+                </div>
+                <div class="city-copy">
+                  <span>31.2304° N</span>
+                  <strong>坐标<br />城市</strong>
+                  <p>声音与影像实验</p>
+                </div>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <span>03 / 创意开发</span>
+                  <h3>坐标城市</h3>
+                </div>
+                <b>↗</b>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey section" id="journey">
+        <div class="section-label reveal">
+          <span>03</span>
+          <p>工作经历</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>2023 — 至今</span>
+            <h3>独立设计师</h3>
+            <p>产品策略、体验设计与创意开发</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>2020 — 2023</span>
+            <h3>高级产品设计师 · 光点科技</h3>
+            <p>负责核心产品体验与设计系统</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>2018 — 2020</span>
+            <h3>视觉设计师 · COMMON Studio</h3>
+            <p>品牌识别、数字体验与动态视觉</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow reveal"><span></span> 有一个想法？</p>
+        <h2 class="reveal">让我们一起把它<br /><em>做出来。</em></h2>
+        <a class="contact-email reveal" href="mailto:hello@linmo.design">
+          hello@linmo.design
+          <span>↗</span>
+        </a>
+        <div class="contact-footer">
+          <p>© 2026 林墨。保留所有权利。</p>
+          <div>
+            <a href="#">小红书</a>
+            <a href="#">即刻</a>
+            <a href="#">GitHub</a>
+          </div>
+          <a href="#top">回到顶部 ↑</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
