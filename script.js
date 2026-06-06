@@ -28,6 +28,7 @@ themeToggle.addEventListener("click", () => {
 menuToggle.addEventListener("click", () => {
   const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "打开菜单" : "关闭菜单");
   navigation.classList.toggle("open", !isOpen);
 });
 
@@ -35,6 +36,7 @@ navigation.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     navigation.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "打开菜单");
   });
 });
 
@@ -54,3 +56,5 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
   element.style.transitionDelay = `${Math.min(index % 3, 2) * 80}ms`;
   revealObserver.observe(element);
 });
+
+root.classList.add("motion-ready");
